@@ -1,0 +1,41 @@
+// Layout
+//================
+
+
+
+#plan-benchmarking {
+	@include span-columns(6, 12);
+	@include highlighted-section($grayLighter);
+
+}
+
+#fee-benchmarking {
+	@include span-columns(6 omega, 12);
+	@include highlighted-section($grayLighter);
+}
+
+.existing-reports {
+	
+	h4 {
+		background: $grayDarker;
+		font-size: 1em;
+		color: $white;
+		padding: .75em;
+	}
+}
+
+.reports {
+	
+	th,
+	td {
+		padding: .5em;
+	}
+	
+	th {
+		color: $grayDarker;
+	}
+	
+	thead {
+		background: lighten($grayDarker, 30%);
+	}
+}

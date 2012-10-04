@@ -1,0 +1,45 @@
+// Reference Library (/reference-library)
+// ---------
+
+.row-wrapper {
+	@include span-columns(12 omega, 12);
+	margin-bottom: 1em;
+
+	.first-column {
+		@include span-columns(6, 12);
+	}
+	
+	.last-column {
+		@include span-columns(6 omega, 12);
+	}
+	
+	h5 {
+		@include span-columns(6 omega, 6);
+		margin-bottom: .5em;
+	}
+		
+	img {
+		@include span-columns(3, 6);
+	}
+	
+	p {
+		@include span-columns(3 omega, 6);
+	}
+	
+	.screenshot {
+		margin-bottom: 1em;
+	}
+	
+	.btn {
+		float: right;
+	}
+}
+
+	.description {
+		@extend .disclaimer;
+		line-height: 15px;
+		font-weight: 100;
+	}
+
+
+

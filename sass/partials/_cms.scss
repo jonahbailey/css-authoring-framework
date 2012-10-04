@@ -1,0 +1,105 @@
+// DDM CMS
+// ---------
+
+//Pods
+
+.pod.regular, 
+.pod.tabbed,
+.pod.columns,
+.pod.accordion,
+.pod.html {
+    @include span-columns(12 omega, 12);
+    margin-bottom: 1em;
+    
+    .pod.regular, 
+    .pod.columns,
+    .pod.function {
+    	margin: 1em 0px 0px
+    }	
+
+    .pod.column {
+		display: inline;
+		float: left;
+		
+		.pod.regular,
+		.pod.columns {
+			margin: 0px;
+			width: 100%;
+		}
+	}
+
+	.pod.column:after {
+		clear:both; //clearfix
+		content:""; //clearfix
+		display:table; //clearfix
+	}
+
+	/* For IE 6/7 (trigger hasLayout) */
+	.pod.column {
+		zoom:1; //clearfix
+	}
+}
+    
+.tabbedContent,
+.tipdown, 
+.pod.column {
+    @include span-columns(12 omega, 12);
+    margin-bottom: 1em;
+    
+    .pod.regular {
+		margin: 0px;
+		width: 100%;
+	}
+}
+
+//Pod Content
+
+.alignCenter {
+	display: block;
+	margin: 0 auto;
+}
+
+.alignTextRight {
+	text-align: right;
+}
+
+.alignTextCenter {
+	text-align: center;
+}
+
+.asset-image {
+
+}
+
+.pod.table {
+	table {
+  		border: 1px solid $grayLight;
+    	@include border-radius($radius);
+    	overflow: hidden;
+	}
+}
+
+//Search Page
+
+#search-wrapper {
+  @include span-columns(12 omega, 12);
+  margin-top: 1em;
+  
+  .info {
+    float: left;
+  }
+}
+
+
+
+#searchResults {
+  @include span-columns(12 omega, 12);
+  
+  .searchForm {
+    li {
+      margin: 1em 0;
+    }
+  
+  }
+}
+

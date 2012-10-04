@@ -1,0 +1,115 @@
+// No Access Popup
+//================
+.no-access {
+	
+	.tool {
+		opacity: .25;
+	}	
+}
+
+.no-access-popup {
+	position: absolute;
+	width: 15em;
+	padding: 1em;
+	@include popup($offWhite);
+	margin: 10em 5.5em;
+	z-index: 1000;
+	
+	h4 {
+		margin-bottom: 1em;
+		text-align: center;
+	}
+}
+
+#login-button {
+	float: right;
+}
+
+// Tools
+//================
+
+.form-container {
+	@include highlighted-section($grayLighter);
+	min-height: 666px;
+}
+
+#plan-benchmarking.form-container {
+	@include span-columns(6, 12);
+}
+
+#fee-benchmarking.form-container {
+	@include span-columns(6 omega, 12);
+}
+
+.tool {
+	
+	h4 {
+		background: $grayDarker;
+		font-size: 1em;
+		color: $white;
+		padding: .75em;
+	}
+	
+	p {
+		padding: .75em;
+	}
+	
+	h5 {
+		padding: .75em;	
+	}
+	
+	.tool-form {
+		padding: .75em;
+		
+		input [type="text"],
+		.textfield {
+			width: 97.5%;
+		}
+	}
+	
+	.btn {
+		float: right;
+	}
+}
+
+// Related Resources
+//================
+
+.first-column {
+	@include span-columns(3, 12);
+}
+
+.column {
+	@include span-columns(3, 12);
+	height: 500px;
+}
+
+.last-column {
+	@include span-columns(3 omega, 12);
+}
+
+.thumbnail-wrapper {
+    @include span-columns(3 omega, 3);
+    min-height: 179px;
+    
+    .thumbnail {
+    	float: left;
+    	margin-right: .5em;
+    	margin-bottom: 1em;
+    	
+    }
+    .btn {
+    	float: left;
+    }
+}
+
+// Callout
+//================
+
+#content {
+
+	.call-out.interior {
+		background: image-url('callout-example.jpg') no-repeat $white;
+		min-height: 160px;
+	}
+}

@@ -1,0 +1,110 @@
+// Report Header
+//================
+
+.section {
+	
+	.page-header {
+		
+		.logo {
+			@include span-columns(6, 12);
+		}
+		
+		.basic-info {
+			@include span-columns(6 omega, 12);
+			
+			span {
+				@include span-columns (6 omega, 6);
+			}
+		}
+	}
+}
+
+// Q & A
+//================
+
+.section-container {
+	margin-bottom: 2em;
+	min-height: 704px;
+
+
+	.left {
+		@include span-columns(4, 12);
+		
+	}
+	
+	.right {
+		@include span-columns(4, 12);
+	}
+	
+	.note {
+		@include span-columns(12,12);
+	}
+	
+}
+
+
+
+
+// Legend
+//================
+
+
+.legend {
+	border: 1px solid $grayDarker;
+	padding: 1em;
+	@include border-radius($radius);
+	float: left;
+
+	li {
+		list-style: inside;
+		font-size: small;
+	}
+		
+	.first {
+		list-style-image: image-url('first.jpg');
+	}								
+									
+	.second {						
+		list-style-image: image-url('second.jpg');
+	}								
+									
+	.third {						
+		list-style-image: image-url('third.jpg');
+	}								
+									
+	.fourth {						
+		list-style-image: image-url('fourth.jpg');
+	}								
+									
+	.fifth {						
+		list-style-image: image-url('fifth.jpg');
+	}								
+									
+	.sixth {						
+		list-style-image: image-url('sixth.jpg');
+	}								
+									
+	.seventh {						
+		list-style-image: image-url('seventh.jpg');
+	}								
+									
+	.eighth {						
+		list-style-image: image-url('eighth.jpg');
+	}								
+									
+	.ninth {						
+		list-style-image: image-url('ninth.jpg');
+	}								
+									
+	.tenth {						
+		list-style-image: image-url('tenth.jpg');
+	}								
+									
+	.eleventh {						
+		list-style-image: image-url('eleventh.jpg');
+	}								
+									
+	.twelfth {						
+		list-style-image: image-url('twelfth.jpg');
+	}
+}

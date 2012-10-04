@@ -1,0 +1,100 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+// Compass Imports
+
+@import "compass/css3/border-radius";
+
+// Core Variables & Mixins
+
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/base";
+
+
+.no-borderradius {
+	
+	.page,
+	#nConstant .nav,
+	#searchBox input,
+	.navbar-inner,
+	.call-out,
+	.btn,
+	.podcast-player ul .selected,
+	.sidebar,
+	.sidebar h4.first,
+	.tab-group .first.btn-large, 
+	#plan-benchmarking,
+	#plan-benchmarking h4,
+	#fee-benchmarking,
+	#fee-benchmarking h4,
+	.business-growth-contact, 
+	.header {
+		position: relative !important;
+		behavior: url('/PIE.php') !important;
+	}
+	
+	.pat-logo {
+		float: left;
+	}
+	
+	#searchBox button {
+		background: image-url('search-ie.png') no-repeat !important;
+		position: relative;
+		z-index: 200;		
+	}
+	
+	.sidebar h4.first,
+	#plan-benchmarking h4,
+	#fee-benchmarking h4 {
+		border-radius: 10px 10px 0px 0px;
+		overflow: hidden;
+	}
+	
+	.tab-group .first.btn-large {
+		border-radius: 10px 0px 0px 0px;
+	}
+	
+	.tab-group .last.btn-large {
+		border-radius: 0px 10px 0px 0px;
+	}
+	
+	.play-btn {
+		@include hide-text;
+	}
+	
+	.no-access-popup {
+		background: image-url('popup-bg-ie.png') no-repeat;
+		background-size: 50%;
+	}
+	
+	.btn,
+	.btn-classy
+	.btn-large {
+		border-radius: 5px;
+		position: relative !important;
+		behavior: url('/PIE.php') !important;
+		overflow: hidden;
+	}
+	
+}
+
+#ie6,
+#ie7 {
+
+	.no-access {
+	
+		.tool {
+			filter: alpha(opacity=25);
+		}	
+	}
+}
+
+#ie8 {
+	.no-access {
+	
+		.tool {
+			-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
+		}	
+	}
+}
