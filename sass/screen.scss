@@ -17,7 +17,6 @@
 
 // Base CSS
 
-@import "partials/_cms";
 @import "partials/_type";
 @import "partials/_forms";
 @import "partials/_tables";
@@ -45,10 +44,8 @@
 @import "partials/_popovers";
 
 // Components: Misc
-@import "partials/_thumbnails";
 @import "partials/_progress-bars";
 @import "partials/_accordion";
-@import "partials/_flexslider";
 
 // Styleguide
 
@@ -56,11 +53,7 @@
 
 // Custom
 @import "partials/_custom.scss";
-@import "partials/_reference-library";
-@import "partials/_business-growth";
-@import "partials/_tools";
-@import "partials/_reports-listing";
-@import "partials/_reports";
 
 // Utility classes
 @import "partials/_utilities"; // Has to be last to override when necessary
+
