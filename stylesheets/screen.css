@@ -4027,6 +4027,17 @@ input.full-width {
   font-size: 2.5em;
   font-weight: normal;
   line-height: 2.1em;
+  width: 100%;
+  float: left;
+  margin-right: 1.695%;
+  display: inline;
+}
+/* line 94, ../sass/partials/_custom.scss */
+.typeahead.dropdown-menu .active {
+  width: 100%;
+  float: left;
+  margin-right: 1.695%;
+  display: inline;
 }
 
 /* line 5, ../sass/partials/_utilities.scss */

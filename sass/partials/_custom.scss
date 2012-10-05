@@ -88,9 +88,10 @@ input.full-width {
 	
 	li {
 		@include font-family-sans-serif(2.5em, normal, $baseLineHeight *1.5);
+		@include span-columns(12,12);
 	}
 	
 	.active {
-		
+		@include span-columns(12,12);
 	}
 }
