@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-	background: $grayDark;
+	background: $bodyBackground;
 }
 * {
 	font-family: $sansFontFamily;
@@ -33,11 +33,28 @@ a.inactive {
 
 .page {
   @include container;
-  background: $white;
-  @include box-shadow($shadow);
 }
 
-/* Header */
+.hidden {
+	display: none;
+}
 
+#main-welcome {
+	@include span-columns(10,12);
+	@include push(1,12);
+	text-align: center;
+}
 
+.instructions {
+	line-height: 1.5em;
+}
 
+label {
+	@include span-columns(12,12);
+	text-align: center;
+	color: $labelColor;
+}
+
+.full-width {
+	@include span-columns (12, 12);
+}

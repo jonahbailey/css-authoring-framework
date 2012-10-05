@@ -1,6 +1,6 @@
 // GLOBAL VALUES
 // --------------------------------------------------
-
+$labelColor: #fdfdff;
 
 // Grays
 // -------------------------
@@ -33,9 +33,9 @@ $purple:                #7a43b6 !default;
 
 // Scaffolding
 // -------------------------
-$bodyBackground:		$grayDark !default;
+$bodyBackground:		$charcoal !default;
 $pageBackground:        #fdfdff !default; // container
-$textColor:             $grayDarker !default;
+$textColor:             $offWhite !default;
 
 
 // Links
@@ -47,32 +47,18 @@ $linkColorHover:        lighten($linkColor, 15%) !default;
 // Typography
 // -------------------------
 
-//font-family:'Avenir LT W01 35 Light';
-//font-family:'AvenirLTW01-35LightObli';
-//font-family:'Avenir LT W01 45 Book';
-//font-family:'AvenirLTW01-45BookObliq';
-//font-family:'AvenirLTW01-55Oblique';
-//font-family:'Avenir LT W01 55 Roman';
-//font-family:'Avenir LT W01 65 Medium';
-//font-family:'AvenirLTW01-65MediumObl';
-//font-family:'Avenir LT W01 85 Heavy';
-//font-family:'AvenirLTW01-85HeavyObli';
-//font-family:'Avenir LT W01 95 Black';
-//font-family:'AvenirLTW01-95BlackObli';
 
+$sansFontFamily:        'HelveticaNeue', Arial, sans-serif !default;
+$serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
 
-
-$sansFontFamily:        'Avenir LT W01 45 Book', Arial, sans-serif !default;
-$serifFontFamily:       'Garamond W01', Georgia, "Times New Roman", Times, serif !default;
-
-$baseFontSize:          1em !default;
+$baseFontSize:          3em !default;
 $baseFontFamily:        $sansFontFamily !default;
 $baseLineHeight:        1.4em !default;
 $altFontFamily:         $serifFontFamily !default;
 
-$headingsFontFamily:    'Avenir LT W01 65 Medium', Arial, sans-serif !default; // empty to use BS default, $baseFontFamily
+$headingsFontFamily:    'HelveticaNeue', Arial, sans-serif !default; // empty to use BS default, $baseFontFamily
 $headingsFontWeight:    bold !default;    // instead of browser default, bold
-$headingsColor:         $charcoal !default; // empty to use BS default, $textColor
+$headingsColor:         $offWhite !default; // empty to use BS default, $textColor
 
 $inputFontFamily:		$serifFontFamily;
 
