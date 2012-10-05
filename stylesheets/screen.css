@@ -626,9 +626,9 @@ input[type="color"],
 .uneditable-input {
   background-color: white;
   border: 1px solid #cccccc;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1038,9 +1038,9 @@ select:focus:required:invalid:focus {
   margin-bottom: 0;
   *margin-left: 0;
   vertical-align: middle;
-  -webkit-border-radius: 0 3px 3px 0;
-  -moz-border-radius: 0 3px 3px 0;
-  border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  border-radius: 0 10px 10px 0;
 }
 /* line 424, ../sass/partials/_forms.scss */
 .input-prepend input:focus,
@@ -1097,18 +1097,18 @@ select:focus:required:invalid:focus {
 /* line 461, ../sass/partials/_forms.scss */
 .input-prepend .add-on:first-child,
 .input-prepend .btn:first-child {
-  -webkit-border-radius: 3px 0 0 3px;
-  -moz-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  border-radius: 10px 0 0 10px;
 }
 
 /* line 468, ../sass/partials/_forms.scss */
 .input-append input,
 .input-append select,
 .input-append .uneditable-input {
-  -webkit-border-radius: 3px 0 0 3px;
-  -moz-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  border-radius: 10px 0 0 10px;
 }
 /* line 471, ../sass/partials/_forms.scss */
 .input-append .uneditable-input {
@@ -1118,9 +1118,9 @@ select:focus:required:invalid:focus {
 /* line 476, ../sass/partials/_forms.scss */
 .input-append .add-on:last-child,
 .input-append .btn:last-child {
-  -webkit-border-radius: 0 3px 3px 0;
-  -moz-border-radius: 0 3px 3px 0;
-  border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  border-radius: 0 10px 10px 0;
 }
 
 /* line 484, ../sass/partials/_forms.scss */
@@ -1135,17 +1135,17 @@ select:focus:required:invalid:focus {
 .input-prepend.input-append .add-on:first-child,
 .input-prepend.input-append .btn:first-child {
   margin-right: -1px;
-  -webkit-border-radius: 3px 0 0 3px;
-  -moz-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  border-radius: 10px 0 0 10px;
 }
 /* line 493, ../sass/partials/_forms.scss */
 .input-prepend.input-append .add-on:last-child,
 .input-prepend.input-append .btn:last-child {
   margin-left: -1px;
-  -webkit-border-radius: 0 3px 3px 0;
-  -moz-border-radius: 0 3px 3px 0;
-  border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  border-radius: 0 10px 10px 0;
 }
 
 /* line 504, ../sass/partials/_forms.scss */
@@ -3922,8 +3922,13 @@ a.inactive:hover {
   text-decoration: none;
 }
 
+/* line 31, ../sass/partials/_custom.scss */
+h1 {
+  font-size: 5em;
+}
+
 /* Layout */
-/* line 34, ../sass/partials/_custom.scss */
+/* line 38, ../sass/partials/_custom.scss */
 .page {
   *zoom: 1;
   max-width: 59em;
@@ -3940,27 +3945,32 @@ a.inactive:hover {
   clear: both;
 }
 
-/* line 38, ../sass/partials/_custom.scss */
+/* line 42, ../sass/partials/_custom.scss */
 .hidden {
   display: none;
 }
 
-/* line 42, ../sass/partials/_custom.scss */
+/* line 46, ../sass/partials/_custom.scss */
 #main-welcome {
-  width: 83.051%;
+  width: 100%;
   float: left;
   margin-right: 1.695%;
   display: inline;
-  margin-left: 8.475%;
   text-align: center;
 }
 
-/* line 48, ../sass/partials/_custom.scss */
+/* line 51, ../sass/partials/_custom.scss */
 .instructions {
   line-height: 1.5em;
+  width: 100%;
+  float: left;
+  margin-right: 1.695%;
+  display: inline;
+  text-align: center;
+  margin-bottom: 2em;
 }
 
-/* line 52, ../sass/partials/_custom.scss */
+/* line 60, ../sass/partials/_custom.scss */
 label {
   width: 100%;
   float: left;
@@ -3968,14 +3978,55 @@ label {
   display: inline;
   text-align: center;
   color: #fdfdff;
+  margin-bottom: .5em;
 }
 
-/* line 58, ../sass/partials/_custom.scss */
-.full-width {
+/* line 67, ../sass/partials/_custom.scss */
+input.full-width {
   width: 100%;
   float: left;
   margin-right: 1.695%;
   display: inline;
+  padding-left: 8.475%;
+  padding-right: 8.475%;
+  margin-bottom: .5em;
+  -webkit-box-shadow: 0px 0px 5px black;
+  -moz-box-shadow: 0px 0px 5px black;
+  box-shadow: 0px 0px 5px black;
+}
+
+/* line 74, ../sass/partials/_custom.scss */
+.help-block {
+  width: 83.051%;
+  float: left;
+  margin-right: 1.695%;
+  display: inline;
+  margin-left: 8.475%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding-left: 8.475%;
+  padding-right: 8.475%;
+  background: #f7f7f9;
+  color: #616162;
+  padding-bottom: .5em;
+  padding-top: .5em;
+  font-size: 1.5em;
+}
+
+/* line 86, ../sass/partials/_custom.scss */
+.typeahead.dropdown-menu {
+  width: 100%;
+  float: left;
+  margin-right: 1.695%;
+  display: inline;
+}
+/* line 89, ../sass/partials/_custom.scss */
+.typeahead.dropdown-menu li {
+  font-family: "HelveticaNeue", Arial, sans-serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  line-height: 2.1em;
 }
 
 /* line 5, ../sass/partials/_utilities.scss */

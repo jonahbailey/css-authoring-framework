@@ -28,6 +28,10 @@ a.inactive {
 	}
 }
 
+h1 {
+	font-size: 5em;
+}
+
 
 /* Layout */
 
@@ -40,21 +44,53 @@ a.inactive {
 }
 
 #main-welcome {
-	@include span-columns(10,12);
-	@include push(1,12);
+	@include span-columns(12,12);
 	text-align: center;
 }
 
 .instructions {
 	line-height: 1.5em;
+	@include span-columns (12, 12);
+	text-align: center;
+	margin-bottom: 2em;
 }
+
+
 
 label {
 	@include span-columns(12,12);
 	text-align: center;
 	color: $labelColor;
+	margin-bottom: .5em;
 }
 
-.full-width {
+input.full-width {
 	@include span-columns (12, 12);
+	@include pad(1,1);
+	margin-bottom: .5em;
+	@include box-shadow (0px 0px 5px $black);
+}
+
+.help-block {
+	@include span-columns (10,12);
+	@include push(1,12);
+	@include border-radius($radius);
+	@include pad(1,1);
+	background: $offWhite;
+	color: $charcoal;
+	padding-bottom: .5em;
+	padding-top: .5em;
+	font-size: 1.5em;
+}
+
+.typeahead.dropdown-menu {
+	@include span-columns (12,12);
+	
+	li {
+		@include font-family-sans-serif(2.5em, normal, $baseLineHeight *1.5);
+	}
+	
+	.active {
+		
+	}
 }
